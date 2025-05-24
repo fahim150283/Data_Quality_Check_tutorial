@@ -1,4 +1,4 @@
-from multiprocessing.managers import Array
+import multiprocessing.managers
 
 print("###################  Strings  ###################")
 print()
