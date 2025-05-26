@@ -27,11 +27,14 @@ print("4.",newlist)
 
 
 fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
-newlist = [x for x in range(5)]
+newlist = [x for x in fruits if not x.startswith("a")]
 print("5.",newlist)
 
-
-
-fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
 newlist = [x for x in range(10) if x < 5]
 print("6.",newlist)
+
+newlist = ['hello' for x in fruits]
+print("7.",newlist)
+
+newlist = [x if x != "banana" else "orange" for x in fruits]
+print("8.",newlist)
