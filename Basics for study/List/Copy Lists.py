@@ -10,3 +10,5 @@ print("2.",mylist)
 thislist = ["peach", "banana", "cherry"]
 mylist = thislist[:]
 print("3.",mylist)
+
+
