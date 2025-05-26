@@ -31,5 +31,15 @@ print("5.",mylist)
 
 
 thislist = ["banana", "Orange", "Kiwi", "cherry"]
-thislist.sort(key=str.lower)
-print(thislist)
+thislist.sort(key = str.lower)
+print("6.",thislist)
+
+
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort(key = str.upper)
+print("7.",thislist)
+
+
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.reverse()
+print("8.",thislist)
