@@ -30,6 +30,13 @@ func3("Emil", "Tobias", "Linus", "Will", "Smith")
 
 
 print("4.")
+
+
+def tri_recursion(Country = "Bangladesh"):
+  print("\t",Country)
+
+
+tri_recursion(6)
 func4("Sweden")
 func4("India")
 func4()
@@ -51,4 +58,3 @@ def tri_recursion(k):
   else:
     result = 0
   return result
-tri_recursion(6)
