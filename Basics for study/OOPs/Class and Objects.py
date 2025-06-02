@@ -74,5 +74,5 @@ print(type(a))
 print(type(comp1))
 
 # call the method within Computer class
-comp1.config()   # it can also be called as Computer.config(comp1)
-Computer.config(comp2)  # it can also be called as comp2.config()
+comp1.config()      # it can also be called as Computer.config(comp1)
+Computer.config(comp2)      # it can also be called as comp2.config()

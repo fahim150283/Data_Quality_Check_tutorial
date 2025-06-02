@@ -1,20 +1,41 @@
-class Parent:
-    def __init__(self, a, b):
-        print("Parent Constructor")
-        print(a, b)
+class Animal:
+    def alive(self):
+        print("Animal is alive")
 
-    def m1(self):
-        print("Parent Method")
+    def eat(self):
+        print("Animal is eating")
 
-class Child(Parent):
-    def child(self):
-        print("Child Method")
-        super().__init__(10, 20)  # Calls Parent.__init__
-        super().m1()  # Calls Parent.m1
+    def sleep(self):
+        print("Animal is sleeping")
 
-    def haha(self):  # Define the missing method
-        print("Haha method called!")
+class Rabbit(Animal):
+    def run(self):
+        print("Rabbit is running")
 
-# Usage:
-c = Child(5, 6)  # Must pass (a, b) since Parent.__init__ needs them
-c.haha()  # Now works!
+class Fish(Animal):
+    def swim(self):
+        print("Fish is swimming")
+
+class Hawk(Animal):
+    def fly(self):
+        print("Hawk is flying")
+
+rabbit = Rabbit()
+fish = Fish()
+hawk = Hawk()
+
+rabbit.run()
+fish.swim()
+hawk.fly()
+
+rabbit.alive()
+fish.alive()
+hawk.alive()
+
+rabbit.eat()
+fish.eat()
+hawk.eat()
+
+rabbit.sleep()
+fish.sleep()
+hawk.sleep()
